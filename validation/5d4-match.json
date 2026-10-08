@@ -1,0 +1,135 @@
+{
+  "profile_name": "Fionn R8 VisionLOG 5D4 Match v1",
+  "file_sha256": "90edeabed7944abe85162acccfefc248c0fdfb6ead554953470a850c4fe0da35",
+  "bytes": 166084,
+  "source_hashes": {
+    "reference_5d4_vision": "d431b7cdbef463e7d45bb0bec95ad956906c6e6f85329d56c1c22fd9bf2ce56c",
+    "installed_5d4_vision": "d431b7cdbef463e7d45bb0bec95ad956906c6e6f85329d56c1c22fd9bf2ce56c",
+    "adobe_5d4": "b1a6645f9b7c1f5aa3ed11dcd96b7b03a6ac9cf6416b9eb6844b0952568cddd5",
+    "adobe_r8": "6bc06ffe2f60a9e7d5588264f67dcd4efd742ecbdfbe340e599cce940f84c6ff",
+    "old_r8_vision": "3dcc967e25162c07ebeb79b95bd41232eb1a3cc1f56ebb039830dd21afa58656"
+  },
+  "installed_and_package_5d4_reference_same": true,
+  "old_r8_and_5d4_tone_curve_same": true,
+  "old_r8_and_5d4_look_table_same": true,
+  "old_r8_HSM_difference_from_5d4": {
+    "50938": {
+      "different_scalars": 180,
+      "different_scalars_outside_zero_saturation_plane": 0
+    },
+    "50939": {
+      "different_scalars": 180,
+      "different_scalars_outside_zero_saturation_plane": 0
+    }
+  },
+  "reference_style_tags_byte_identical": [
+    50937,
+    50938,
+    50940,
+    50941,
+    50981,
+    50982,
+    51110
+  ],
+  "reference_HSM_reused_for_both_illuminants": true,
+  "r8_color_matrices_and_illuminants_preserved": true,
+  "matrix_adaptation": "FM8_i = FM5_Vision * diag(1/(CM5_i * W_i)) * CM5_i * inv(CM8_i) * diag(CM8_i * W_i)",
+  "matrix_method_scope": "Approximation from manufacturer-specific Adobe calibration matrices; endpoint agreement is mathematical within this 3x3 model, not measured two-camera colour equivalence. Assumes identity per-unit camera calibration and analog balance; metamerism and intermediate illuminant interpolation are not solved.",
+  "calibration_endpoint_tests": [
+    {
+      "illuminant": "Standard A",
+      "xy": [
+        0.44757,
+        0.40745
+      ],
+      "forward_matrix": [
+        [
+          0.50940823,
+          0.4107595,
+          0.04413227
+        ],
+        [
+          0.15614792,
+          0.92652798,
+          -0.0826759
+        ],
+        [
+          0.0188991,
+          -0.08701818,
+          0.89321908
+        ]
+      ],
+      "row_sums": [
+        0.9642999999999999,
+        0.9999999999999999,
+        0.8251000000000001
+      ],
+      "determinant": 0.35861293381256554,
+      "condition_number": 2.9778658832132217,
+      "model_equivalence_max_abs_XYZ_error_after_serialization": 6.391702056518511e-09,
+      "sample_count": 10000
+    },
+    {
+      "illuminant": "D65",
+      "xy": [
+        0.3127,
+        0.329
+      ],
+      "forward_matrix": [
+        [
+          0.53249412,
+          0.34444794,
+          0.08735794
+        ],
+        [
+          0.19566003,
+          0.88063762,
+          -0.07629765
+        ],
+        [
+          0.04693428,
+          -0.16104137,
+          0.93920709
+        ]
+      ],
+      "row_sums": [
+        0.9642999999999999,
+        1.0,
+        0.8251000000000001
+      ],
+      "determinant": 0.3629893602289161,
+      "condition_number": 2.938451265243743,
+      "model_equivalence_max_abs_XYZ_error_after_serialization": 9.998302408220638e-09,
+      "sample_count": 10000
+    }
+  ],
+  "curve_endpoints": [
+    [
+      0.0,
+      0.010670999996364117
+    ],
+    [
+      1.0,
+      0.9329259991645813
+    ]
+  ],
+  "curve_endpoint_note": "Original VisionLOG non-zero black and sub-unity white endpoints retained intentionally for reference compatibility; not strict SDR DNG endpoint conformance.",
+  "structural_and_numeric_validation": "pass",
+  "ACR_loading_validation": "not_completed",
+  "matched_5d4_and_r8_RAW_empirical_calibration": false,
+  "source_files_unchanged": true,
+  "interpolated_forward_matrix_checks": {
+    "count": 101,
+    "min_determinant": 0.35861293381256554,
+    "max_condition_number": 2.9778658832132217,
+    "neutral_axis_max_deviation": 3.3306690738754696e-16
+  },
+  "source_filenames": {
+    "reference_5d4_vision": "VisionLOG_5DMkIV.dcp",
+    "installed_5d4_vision": "Canon EOS 5D Mark IV Camera VisionLOG.dcp",
+    "adobe_5d4": "Canon EOS 5D Mark IV Adobe Standard.dcp",
+    "adobe_r8": "Canon EOS R8 Adobe Standard.dcp",
+    "old_r8_vision": "2023 Canon EOS R8.dcp"
+  },
+  "publication_note": "Published unchanged DCP bytes; local paths and editing-session details removed from this report."
+}

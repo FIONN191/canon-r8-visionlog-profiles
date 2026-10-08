@@ -1,0 +1,85 @@
+{
+  "source_files_sha256": {
+    "Canon EOS R8 Camera Neutral.dcp": "77085664b7d7e55d1e5ac2137d9239496093b29fb4fd1aba43e87bb1654a1c62",
+    "Canon EOS R8 Adobe Standard.dcp": "6bc06ffe2f60a9e7d5588264f67dcd4efd742ecbdfbe340e599cce940f84c6ff",
+    "2023 Canon EOS R8.dcp": "3dcc967e25162c07ebeb79b95bd41232eb1a3cc1f56ebb039830dd21afa58656"
+  },
+  "vision_matches_adobe_standard_matrices": {
+    "50721": true,
+    "50722": true,
+    "50964": true,
+    "50965": true
+  },
+  "vision_huesat_data_matches_adobe_standard": {
+    "50937": false,
+    "50938": false,
+    "50939": false
+  },
+  "vision_look_matches_adobe_standard": false,
+  "vision_tone_endpoints": [
+    [
+      0.0,
+      0.010670999996364117
+    ],
+    [
+      1.0,
+      0.9329259991645813
+    ]
+  ],
+  "vision_profile_name": "Canon EOS R8",
+  "vision_has_copyright_tag": false,
+  "vision_author_or_version_verifiable_from_metadata": false,
+  "new_profiles": {
+    "NaturalFlat": {
+      "file": "Fionn R8 NaturalFlat v1.dcp",
+      "sha256": "f6a4da617dcaa25382a1ff0fcc0aa668cbe9adaadf6bfeec2f367f9529c96c33",
+      "bytes": 278100,
+      "changed_tags": [
+        50936,
+        50940
+      ],
+      "color_data_byte_identical_to_camera_neutral": true,
+      "curve_points": 128,
+      "curve_endpoints": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "camera_neutral_curve_weight": 0.8,
+      "structure_validation": "pass",
+      "ACR_visual_validation": "not_completed: no systematic RAW rendering or colorimetric acceptance test"
+    },
+    "LinearBase": {
+      "file": "Fionn R8 LinearBase v1.dcp",
+      "sha256": "a6148dfbc5883017553a4fd63484ff224b0670bf0baa348e756ec6cd0b6028fa",
+      "bytes": 277092,
+      "changed_tags": [
+        50936,
+        50940
+      ],
+      "color_data_byte_identical_to_camera_neutral": true,
+      "curve_points": 2,
+      "curve_endpoints": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "camera_neutral_curve_weight": 0.0,
+      "structure_validation": "pass",
+      "ACR_visual_validation": "not_completed: no systematic RAW rendering or colorimetric acceptance test"
+    }
+  },
+  "colorimetric_accuracy_calibrated_against_color_target": false,
+  "note": "DCP tone-curve coordinates are linear-domain profile data, not screen pixel values. Raw processors may add other tone operations. NaturalFlat and LinearBase are still-photo bases, not a standard video log encoding.",
+  "publication_note": "Published unchanged DCP bytes; local paths and editing-session details removed from this report."
+}
